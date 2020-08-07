@@ -11,3 +11,10 @@ def sort_array_char_count(array)
     left.length <=> right.length
   end
 end
+
+def swap_elements_from_to(array)
+  
+  
+def reverse_array(array)
+  array.reverse
+end
