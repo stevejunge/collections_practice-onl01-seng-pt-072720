@@ -6,14 +6,8 @@ def sort_array_desc(n)
   n.sort.reverse
 end
 
-def sort_array_char_count(n)
-  n.index.sort do |a, b|
-  if a == b
-    0
-  elsif a < b
-    -1
-  elsif a > b
-    1
+def sort_array_char_count(array)
+  array.sort do |left, right|
+    left.length <=> right.length
   end
 end
-  
