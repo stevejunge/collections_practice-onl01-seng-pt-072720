@@ -32,3 +32,33 @@ def find_a(array)
     word[0] == "a"
   end
 end
+
+def sum_array(array)
+  array.inject(:+) 
+  
+end 
+  # using reduce method
+    # array.reduce(:+)
+
+  # using inject method (short)
+     # array.inject(:+)
+
+  # using inject method (long)
+     # array.inject do |sum,x|
+     #  sum + x
+     # end
+
+
+sum_array([11,4,7,8,9,100,134]) #273
+
+def add_s(array)
+  array.collect do |word|
+    if array[1] == word
+      word
+    else
+      word + "s"
+    end
+  end
+end
+
+add_s(["hand","feet", "knee", "table"]) #["hands","feet", "knees", "tables"]
