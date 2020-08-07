@@ -37,16 +37,7 @@ def sum_array(array)
   array.inject(:+) 
   
 end 
-  # using reduce method
-    # array.reduce(:+)
 
-  # using inject method (short)
-     # array.inject(:+)
-
-  # using inject method (long)
-     # array.inject do |sum,x|
-     #  sum + x
-     # end
 
 
 sum_array([11,4,7,8,9,100,134]) #273
